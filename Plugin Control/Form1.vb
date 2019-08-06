@@ -10,7 +10,7 @@ Public Class Form1
         End
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Control.CheckForIllegalCrossThreadCalls = False
+        Control.CheckForIllegalCrossThreadCalls = False ' this was lazy/bad line. fix it plz
         FileIO.FileSystem.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\PlugControl_Images")
         Dim a As New Thread(AddressOf Accp)
         a.Start()
