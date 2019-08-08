@@ -7,6 +7,6 @@
         TextBox1.Dock = DockStyle.Fill
         PictureBox1.Dock = DockStyle.Fill
     End Sub
-    Public oo As Boolean
+ 
     
 End Class
